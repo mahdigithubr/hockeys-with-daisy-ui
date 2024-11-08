@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hockey's</title>
+    <title>Hockey</title>
     <!-- tailwind and daisy ui cnd -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
@@ -36,6 +36,7 @@
               clifford: "#da373d",
               "text-primary": "#424247",
               primary: "#FF4240",
+              "text-black": "#131318",
             },
           },
         },
@@ -49,31 +50,49 @@
     </style>
   </head>
   <body class="manrope-font space-y-20">
-    <!-- header section start -->
-    <header class="container mx-auto space-y-20">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+    <!-- header  -->
+    <header class="container mx-auto mt-5">
+      <!-- navbar  -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-text-primary"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <li class="text-primary"><a>Home</a></li>
+                <li><a>About </a></li>
+                <li><a>Package</a></li>
+                <li><a>Blog </a></li>
+                <li><a>Contact </a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-text-primary"
+            <a class="btn btn-ghost relative px-0 text-3xl lg:text-4xl"
+              >Hockey<span
+                class="absolute text-4xl text-primary m-0 p-0 right-3 lg:right-4 font-extrabold"
+                >’</span
+              >s</a
             >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-text-primary">
               <li class="text-primary"><a>Home</a></li>
               <li><a>About </a></li>
               <li><a>Package</a></li>
@@ -81,36 +100,1068 @@
               <li><a>Contact </a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost relative px-0 text-3xl lg:text-4xl"
-            >Hockey<span
-              class="absolute text-4xl text-primary m-0 p-0 right-3 lg:right-4 font-extrabold"
-              >’</span
-            >s</a
+          <div class="navbar-end gap-4">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a class="btn lg:py-3 bg-primary text-white hover:bg-primary"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="mt-10 lg:relative lg:h-[550px]">
+        <div class="carousel w-full lg:h-[550px]">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full lg:h-[550px] rounded-xl"
           >
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-text-primary">
-            <li class="text-primary"><a>Home</a></li>
-            <li><a>About </a></li>
-            <li><a>Package</a></li>
-            <li><a>Blog </a></li>
-            <li><a>Contact </a></li>
-          </ul>
-        </div>
-        <div class="navbar-end gap-4">
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          <a class="btn lg:py-3 bg-primary text-white hover:bg-primary"
-            >Get Ticket</a
+            <img src="Images/1.png" class="w-full lg:h-[550px]" />
+            <div
+              class="absolute left-5 right-5 top-3/4 md:top-[300px] lg:top-[500px] flex -translate-y-1/2 transform justify-start gap-4"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full lg:h-[550px] rounded-xl"
           >
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+              class="w-full lg:h-[550px]"
+            />
+            <div
+              class="absolute left-5 right-5 md:top-[300px] lg:top-[500px] top-3/4 flex -translate-y-1/2 transform justify-start gap-4"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full lg:h-[550px]">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+              class="w-full lg:h-[550px]"
+            />
+            <div
+              class="absolute left-5 right-5 top-3/4 md:top-[300px] lg:top-[500px] flex -translate-y-1/2 transform justify-start gap-4"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full lg:h-[550px] rounded-xl"
+          >
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+              class="w-full lg:h-[550px]"
+            />
+            <div
+              class="absolute left-5 right-5 top-3/4 md:top-[300px] lg:top-[500px] flex -translate-y-1/2 transform justify-start gap-4"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white hover:bg-black hover:text-white"
+                >❯</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
+        <!-- bonus div -->
+        <div
+          class="lg:w-1/2 lg:absolute lg:p-8 p-4 bg-text-black rounded-xl space-y-5 right-5 bottom-10"
+        >
+          <h4 class="text-2xl text-white">
+            Meet all the heroes from the field
+          </h4>
+          <p class="text-[#FFFFFF]">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </section>
     </header>
-    <!-- header section end -->
-    <!-- main section start -->
-    <main class="container mx-auto space-y-20"></main>
-    <!-- main section end -->
-    <!-- footer section start -->
-    <footer></footer>
-    <!-- footer section end -->
+    <!--main  -->
+    <main class="container mx-auto space-y-20">
+      <!-- professional section -->
+
+      <section class="space-y-5 p-4">
+        <hr class="border-b border-dashed" />
+        <h2 class="text-4xl text-heading text-center font-extrabold">
+          Professional Hockeys Club
+        </h2>
+        <p class="text-text-primary text-center">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br class="hidden lg:block" />
+          dolor. Purus urna in sit nullam proin.
+        </p>
+        <hr class="border-b border-dashed" />
+        <!-- section content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
+          <div class="text-center space-y-3">
+            <div
+              class="radial-progress text-[#FF4240] rotate-180"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="rotate-180 text-black font-black">87%</span>
+            </div>
+            <h4 class="text-xl text-text-black font-semibold">
+              Prayer Facility
+            </h4>
+            <p class="text-text-primary">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="text-center space-y-3">
+            <diva
+              class="radial-progress text-[#49D293] rotate-180"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="rotate-180 text-black font-black">95%</span>
+            </diva>
+            <h4 class="text-xl text-text-black font-semibold">
+              Experienced Coach
+            </h4>
+            <p class="text-text-primary">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="text-center space-y-3">
+            <diva
+              class="radial-progress text-[#4C8DF1] rotate-180"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="rotate-180 text-black font-black">90%</span>
+            </diva>
+            <h4 class="text-xl text-text-black font-semibold">Senior Player</h4>
+            <p class="text-text-primary">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="text-center space-y-3">
+            <diva
+              class="radial-progress text-[#FFB546] rotate-180"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="rotate-180 text-black font-black">80%</span>
+            </diva>
+            <h4 class="text-xl text-text-black font-semibold">
+              Training Ground
+            </h4>
+            <p class="text-text-primary">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- program section -->
+      <section class="space-y-5 p-4">
+        <hr class="border-b border-dashed" />
+        <h2 class="text-4xl text-heading text-center font-extrabold">
+          Program Sections
+        </h2>
+        <p class="text-text-primary text-center">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br class="hidden lg:block" />
+          dolor. Purus urna in sit nullam proin.
+        </p>
+        <hr class="border-b border-dashed" />
+        <!-- section content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- program card 1 -->
+          <div
+            class="relative p-5 lg:p-7 lg:py-5 py-10 lg:pt-16 bg-[url('/images/2.png')] bg-no-repeat bg-cover z-10 rounded-xl lg:rounded-2xl"
+          >
+            <div
+              class="bg-black w-full h-full absolute left-0 top-0 -z-10 opacity-50 rounded-xl lg:rounded-2xl"
+            ></div>
+            <h4 class="text-3xl font-extrabold text-white mb-4">
+              Junior Program
+            </h4>
+            <p class="text-red-100 mb-5">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn hover:text-white hover:bg-primary bg-primary text-white border-none"
+            >
+              Register Now
+            </button>
+          </div>
+          <!-- program card 2 -->
+          <div
+            class="relative p-5 lg:p-7 lg:py-5 py-10 lg:pt-16 bg-[url('/images/3.png')] bg-no-repeat bg-cover z-10 rounded-xl lg:rounded-2xl"
+          >
+            <div
+              class="bg-black w-full h-full absolute left-0 top-0 -z-10 opacity-50 rounded-xl lg:rounded-2xl"
+            ></div>
+            <h4 class="text-3xl font-extrabold text-white mb-4">
+              Teenager Program
+            </h4>
+            <p class="text-red-100 mb-5">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn hover:text-white hover:bg-primary bg-primary text-white border-none"
+            >
+              Register Now
+            </button>
+          </div>
+          <!-- program card 3 -->
+          <div
+            class="lg:col-span-2 relative py-9 lg:py-5 p-5 lg:p-7 lg:pt-40 bg-[url('/images/4.png')] bg-no-repeat bg-cover z-10 rounded-xl lg:rounded-2xl"
+          >
+            <div
+              class="bg-black w-full h-full absolute left-0 top-0 -z-10 opacity-50 rounded-xl lg:rounded-2xl"
+            ></div>
+            <h4 class="text-3xl font-extrabold text-white mb-4">
+              Professional Program
+            </h4>
+            <p class="text-red-100 mb-5">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              <br class="hidden lg:block" />
+              enim sagittis turpis in magna. Id et sed euismod natoque amet
+              nunc<br class="hidden lg:block" />
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn hover:text-white hover:bg-primary bg-primary text-white border-none"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- product section start -->
+      <section class="space-y-5 p-4">
+        <hr class="border-b border-dashed" />
+        <h2 class="text-4xl text-heading text-center font-extrabold">
+          Our New Products
+        </h2>
+        <p class="text-text-primary text-center">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br class="hidden lg:block" />
+          dolor. Purus urna in sit nullam proin.
+        </p>
+        <hr class="border-b border-dashed" />
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center gap-7">
+          <!-- product 1 -->
+          <div
+            class="flex flex-col lg:flex-row lg:mx-0 mx-auto lg:max-w-none p-6 lg:pr-10 border rounded-xl gap-6 flex-1"
+          >
+            <div class="w-full lg:w-auto">
+              <img src="Images/5.png" alt="" class="w-full lg:w-auto" />
+            </div>
+            <div class="lg:space-y-3 space-y-2">
+              <div class="space-x-3">
+                <span class="text-text-primary">
+                  <i class="fa-solid fa-star text-amber-500"></i>
+                  5.0
+                </span>
+                <span class="text-text-primary text-lg"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                  20
+                </span>
+                <span class="text-text-primary"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  200
+                </span>
+              </div>
+              <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+              <p class="text-text-primary">
+                Dolor sit amet consectetur. Ut urna diam
+                <br class="lg:block hidden" />
+                quis sagittis.
+              </p>
+              <div class="lg:space-x-3 space-y-2 lg:space-y-0">
+                <p class="lg:inline text-[#FF4240] font-black">
+                  Price - $22.00
+                </p>
+                <p class="lg:inline">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- product 2 -->
+          <div
+            class="flex flex-col lg:flex-row lg:mx-0 mx-auto lg:max-w-none p-6 lg:pr-10 border rounded-xl gap-6 flex-1"
+          >
+            <div class="w-full lg:w-auto">
+              <img src="Images/6.png" alt="" class="w-full lg:w-auto" />
+            </div>
+            <div class="lg:space-y-3 space-y-2">
+              <div class="space-x-3">
+                <span class="text-text-primary">
+                  <i class="fa-solid fa-star text-amber-500"></i>
+                  5.0
+                </span>
+                <span class="text-text-primary text-lg"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                  20
+                </span>
+                <span class="text-text-primary"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  200
+                </span>
+              </div>
+              <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+              <p class="text-text-primary">
+                Dolor sit amet consectetur. Ut urna diam
+                <br class="lg:block hidden" />
+                quis sagittis.
+              </p>
+              <div class="lg:space-x-3 space-y-2 lg:space-y-0">
+                <p class="lg:inline text-[#FF4240] font-black">
+                  Price - $22.00
+                </p>
+                <p class="lg:inline">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- product 3 -->
+          <div
+            class="flex flex-col lg:flex-row lg:mx-0 mx-auto lg:max-w-none p-6 lg:pr-10 border rounded-xl gap-6 flex-1"
+          >
+            <div class="w-full lg:w-auto">
+              <img src="Images/7.png" alt="" class="w-full lg:w-auto" />
+            </div>
+            <div class="lg:space-y-3 space-y-2">
+              <div class="space-x-3">
+                <span class="text-text-primary">
+                  <i class="fa-solid fa-star text-amber-500"></i>
+                  5.0
+                </span>
+                <span class="text-text-primary text-lg"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                  20
+                </span>
+                <span class="text-text-primary"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  200
+                </span>
+              </div>
+              <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+              <p class="text-text-primary">
+                Dolor sit amet consectetur. Ut urna diam
+                <br class="lg:block hidden" />
+                quis sagittis.
+              </p>
+              <div class="lg:space-x-3 space-y-2 lg:space-y-0">
+                <p class="lg:inline text-[#FF4240] font-black">
+                  Price - $22.00
+                </p>
+                <p class="lg:inline">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- product 4 -->
+          <div
+            class="flex flex-col lg:flex-row lg:mx-0 mx-auto lg:max-w-none p-6 lg:pr-10 border rounded-xl gap-6 flex-1"
+          >
+            <div class="w-full lg:w-auto">
+              <img src="Images/8.png" alt="" class="w-full lg:w-auto" />
+            </div>
+            <div class="lg:space-y-3 space-y-2">
+              <div class="space-x-3">
+                <span class="text-text-primary">
+                  <i class="fa-solid fa-star text-amber-500"></i>
+                  5.0
+                </span>
+                <span class="text-text-primary text-lg"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                  20
+                </span>
+                <span class="text-text-primary"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  200
+                </span>
+              </div>
+              <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+              <p class="text-text-primary">
+                Dolor sit amet consectetur. Ut urna diam
+                <br class="lg:block hidden" />
+                quis sagittis.
+              </p>
+              <div class="lg:space-x-3 space-y-2 lg:space-y-0">
+                <p class="lg:inline text-[#FF4240] font-black">
+                  Price - $22.00
+                </p>
+                <p class="lg:inline">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- product 5 -->
+          <div
+            class="flex flex-col lg:flex-row lg:mx-0 mx-auto lg:max-w-none p-6 lg:pr-10 border rounded-xl gap-6 flex-1"
+          >
+            <div class="w-full lg:w-auto">
+              <img src="Images/9.png" alt="" class="w-full lg:w-auto" />
+            </div>
+            <div class="lg:space-y-3 space-y-2">
+              <div class="space-x-3">
+                <span class="text-text-primary">
+                  <i class="fa-solid fa-star text-amber-500"></i>
+                  5.0
+                </span>
+                <span class="text-text-primary text-lg"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                  20
+                </span>
+                <span class="text-text-primary"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  200
+                </span>
+              </div>
+              <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+              <p class="text-text-primary">
+                Dolor sit amet consectetur. Ut urna diam
+                <br class="lg:block hidden" />
+                quis sagittis.
+              </p>
+              <div class="lg:space-x-3 space-y-2 lg:space-y-0">
+                <p class="lg:inline text-[#FF4240] font-black">
+                  Price - $22.00
+                </p>
+                <p class="lg:inline">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- product 6 -->
+          <div
+            class="flex flex-col lg:flex-row lg:mx-0 mx-auto lg:max-w-none p-6 lg:pr-10 border rounded-xl gap-6 flex-1"
+          >
+            <div class="w-full lg:w-auto">
+              <img src="Images/10.png" alt="" class="w-full lg:w-auto" />
+            </div>
+            <div class="lg:space-y-3 space-y-2">
+              <div class="space-x-3">
+                <span class="text-text-primary">
+                  <i class="fa-solid fa-star text-amber-500"></i>
+                  5.0
+                </span>
+                <span class="text-text-primary text-lg"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                  20
+                </span>
+                <span class="text-text-primary"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  200
+                </span>
+              </div>
+              <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+              <p class="text-text-primary">
+                Dolor sit amet consectetur. Ut urna diam
+                <br class="lg:block hidden" />
+                quis sagittis.
+              </p>
+              <div class="lg:space-x-3 space-y-2 lg:space-y-0">
+                <p class="lg:inline text-[#FF4240] font-black">
+                  Price - $22.00
+                </p>
+                <p class="lg:inline">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- client faq section -->
+      <section class="space-y-5 p-4">
+        <hr class="border-b border-dashed" />
+        <h2 class="text-4xl text-heading text-center font-extrabold">
+          Clients Question
+        </h2>
+        <p class="text-text-primary text-center">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br class="hidden lg:block" />
+          dolor. Purus urna in sit nullam proin.
+        </p>
+        <hr class="border-b border-dashed" />
+        <div class="flex flex-col lg:flex-row gap-6 border rounded-xl p-7">
+          <div class="">
+            <img src="Images/11.png" alt="" />
+          </div>
+          <div class="flex-1 space-y-2">
+            <div class="collapse collapse-plus border-b rounded-none">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <p>Our Equipment</p>
+              </div>
+              <div class="collapse-content">
+                <p class="text-text-primary">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim <br class="hidden lg:block" />
+                  sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b rounded-none">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                <p>Hockey Training</p>
+              </div>
+              <div class="collapse-content">
+                <p class="text-text-primary">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim <br class="hidden lg:block" />
+                  sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b rounded-none">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p class="text-text-primary">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim <br class="hidden lg:block" />
+                  sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b rounded-none">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                <p>Ski Touring</p>
+              </div>
+              <div class="collapse-content">
+                <p class="text-text-primary">
+                  diam quis sagittis. Elit elit enim Dolor sit amet consectetur.
+                  Ut urna
+                  <br class="hidden lg:block" />
+                  sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b rounded-none">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                <p>Booking</p>
+              </div>
+              <div class="collapse-content">
+                <p class="text-text-primary">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim <br class="hidden lg:block" />
+                  sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b rounded-none">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                <p>Pricings</p>
+              </div>
+              <div class="collapse-content">
+                <p class="text-text-primary">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim<br class="hidden lg:block" />
+                  sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section  -->
+      <section class="space-y-5 p-4">
+        <hr class="border-b border-dashed" />
+        <h2 class="text-4xl text-heading text-center font-extrabold">
+          Get In Touch
+        </h2>
+        <p class="text-text-primary text-center">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br class="hidden lg:block" />
+          dolor. Purus urna in sit nullam proin.
+        </p>
+        <hr class="border-b border-dashed" />
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-5 lg:gap-x-8 lg:gap-y-8 gap-y-4 pt-5"
+        >
+          <div
+            class="lg:col-span-1 lg:row-span-4 p-10 space-y-5 border rounded-xl"
+          >
+            <div class="bg-lime-100 p-4 pb-10 rounded-lg">
+              <img src="Images/Group 1171275317.png" alt="" />
+              <p class="text-text-primary mt-3">Phone Number :</p>
+              <h5 class="text-text-black font-extrabold">(+62) 123-321-543</h5>
+            </div>
+            <div class="bg-yellow-100 p-4 pb-10 rounded-lg">
+              <img src="Images/Group 1171275318.png" alt="" />
+              <p class="text-text-primary mt-3">Phone Number :</p>
+              <h5 class="text-text-black font-extrabold">(+62) 123-321-543</h5>
+            </div>
+            <div class="bg-blue-100 p-4 pb-10 rounded-lg">
+              <img src="Images/Group 1171275321.png" alt="" />
+              <p class="text-text-primary mt-3">Phone Number :</p>
+              <h5 class="text-text-black font-extrabold">(+62) 123-321-543</h5>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-2 lg:row-span-4 space-y-5 w-5/6 mx-auto m-auto"
+          >
+            <form class="space-y-5">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <label class="flex-1" for="name">
+                  <h4 class="text-xl font-extrabold">Your Name</h4>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    class="input input-bordered w-full bg-gray-50"
+                  />
+                </label>
+                <label class="flex-1" for="email">
+                  <h4 class="text-xl font-extrabold">Your Email</h4>
+                  <input
+                    type="text"
+                    placeholder="Enter your Email"
+                    class="input input-bordered w-full bg-gray-50"
+                  />
+                </label>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-4">
+                <label class="flex-1" for="name">
+                  <h4 class="text-xl font-extrabold">Subject</h4>
+                  <input
+                    type="text"
+                    placeholder="Enter your Subject"
+                    class="input input-bordered w-full bg-gray-50"
+                  />
+                </label>
+                <label class="flex-1" for="email">
+                  <h4 class="text-xl font-extrabold">Phone Number</h4>
+                  <input
+                    type="text"
+                    placeholder="Enter your phone number"
+                    class="input input-bordered w-full bg-gray-50"
+                  />
+                </label>
+              </div>
+              <div>
+                <label for="massage">
+                  <h4 class="text-xl font-extrabold">Massage</h4>
+                  <textarea
+                    placeholder="Write your message"
+                    class="textarea textarea-bordered textarea-lg w-full h-80 bg-gray-50"
+                  ></textarea>
+                </label>
+              </div>
+              <button
+                class="btn bg-primary w-full text-white hover:bg-primary hover:text-white"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div
+            class="lg:col-span-3 text-center space-y-4 bg-[#F8F8F8] rounded-lg flex flex-col justify-center"
+          >
+            <h4 class="text-xl font-bold">Social Media</h4>
+            <div class="space-x-4">
+              <i class="fa-brands fa-facebook text-2xl"></i>
+              <i class="fa-brands fa-twitter text-2xl"></i>
+              <i class="fa-brands fa-github text-2xl"></i>
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#131318]">
+      <div
+        class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 p-10 text-gray-400"
+      >
+        <aside class="col-span-1 text-center mx-auto m-auto lg:text-left">
+          <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
+          <p class="mb-4 mt-2">
+            Dit amet consectetur. Condimentum <br />
+            adipiscing aliquam turpis placerat dolor. Purus <br />
+            urna in sit nullam proin.
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 inline text-primary mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+              />
+            </svg>
+            (+62) 123-321-543
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 inline text-primary mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            hockeys@support.com
+          </p>
+        </aside>
+
+        <div class="flex lg:col-span-2 justify-around lg:text-left text-center">
+          <nav class="space-y-2 block">
+            <h6 class="text-white text-xl font-bold mb-3">Company</h6>
+            <a class="block">About us</a>
+            <a class="block">Leadership</a>
+            <a class="block">Careers</a>
+            <a class="block">News & Article</a>
+            <a class="block">Legal Notice</a>
+          </nav>
+          <nav class="space-y-2 block">
+            <h6 class="text-white text-xl font-bold mb-3">Suport</h6>
+            <a class="block">Help Center</a>
+            <a class="block">FAQ</a>
+            <a class="block">Ticket Support</a>
+            <a class="block">Contact Us</a>
+          </nav>
+        </div>
+        <nav
+          class="space-y-2 block col-span-1 mx-auto m-auto text-center lg:text-left"
+        >
+          <h6 class="text-white text-xl font-bold mb-3">Services</h6>
+          <a class="block">Academy</a>
+          <a class="block">Group Lesson</a>
+          <a class="block">Private Lesson</a>
+          <a class="block">Hockeys for kids</a>
+          <a class="block">Hockeys for Adult</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
